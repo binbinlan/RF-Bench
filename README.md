@@ -8,4 +8,4 @@ A deep learning based benchmark for hourly runoff and flood forecasting
 
 
 
-<div align=center><img src="[https://github.com/binbinlan/RF-Bench/blob/main/pics/fig2.png]" width="180" height="105"> width="180" height="105"/></div>
+<div align=center><img src="https://github.com/binbinlan/RF-Bench/blob/main/pics/fig2.png/" width="180" height="105"> width="180" height="105"/></div>
