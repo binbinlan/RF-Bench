@@ -1,4 +1,4 @@
-# ![Image text](https://github.com/binbinlan/RF-Bench/blob/main/pics/fig3.png) RF-Bench
+# ![Image text](https://github.com/binbinlan/RF-Bench/blob/main/pics/fig4.png) RF-Bench
 ***
 A deep learning based benchmark for hourly runoff and flood forecasting
 ***
