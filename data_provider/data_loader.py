@@ -426,7 +426,7 @@ class Dataset_Pred(Dataset):
 
     def add_attributes(self):
 
-        attributes_path = Path(r'D:/new_models/Patch_Transformer/PatchTST-main/PatchTST_supervised/data') / 'camels_attributes_v2.0'
+        attributes_path = Path(r'./data') / 'camels_attributes_v2.0'
         if not attributes_path.exists():
             raise RuntimeError(f"Attribute folder not found at {attributes_path}")
         txt_files = attributes_path.glob('camels_*.txt')
@@ -623,10 +623,9 @@ class Dataset_Runoff(Dataset):
 
 
 
-
     def add_attributes(self):
 
-        attributes_path = Path(r'D:/new_models/Patch_Transformer/PatchTST-main/PatchTST_supervised/data') / 'camels_attributes_v2.0'
+        attributes_path = Path(r'./data') / 'camels_attributes_v2.0'
         if not attributes_path.exists():
             raise RuntimeError(f"Attribute folder not found at {attributes_path}")
         txt_files = attributes_path.glob('camels_*.txt')

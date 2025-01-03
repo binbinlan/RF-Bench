@@ -13,10 +13,10 @@ if __name__ == '__main__':
     print("now in main")
 
     sys.stdout.flush()
-    parser = argparse.ArgumentParser(description='Autoformer & Transformer family for Time Series Forecasting')
+    parser = argparse.ArgumentParser(description='Transformer family for Runoff and flood Forecasting')
 
     # random seed
-    parser.add_argument('--random_seed', type=int, default=2021, help='random seed')
+    parser.add_argument('--random_seed', type=int, default=2024, help='random seed')
 
     # basic config
     parser.add_argument('--is_training', type=int,default=1, help='status')
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str,  default='DLinear',
                         help='model name, options: [Autoformer, Informer, Transformer,PatchTST, DLinear,LSTM ]')
     parser.add_argument('--all_model', type=bool,  default=False,
-                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM]')
+                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear, LSTM, Mamba]')
 
     # data loader
     parser.add_argument('--data', type=str,  default='Runoff', help='dataset type')
@@ -63,9 +63,9 @@ if __name__ == '__main__':
 
     # Formers 
     parser.add_argument('--embed_type', type=int, default=0, help='0: default 1: value embedding + temporal embedding + positional embedding 2: value embedding + temporal embedding 3: value embedding + positional embedding 4: value embedding')
-    parser.add_argument('--enc_in', type=int, default=41, help='encoder input size') # DLinear with --individual, use this hyperparameter as the number of channels
-    parser.add_argument('--dec_in', type=int, default=41, help='decoder input size')
-    parser.add_argument('--c_out', type=int, default=41, help='output size')
+    parser.add_argument('--enc_in', type=int, default=12, help='encoder input size') # DLinear with --individual, use this hyperparameter as the number of channels
+    parser.add_argument('--dec_in', type=int, default=12, help='decoder input size')
+    parser.add_argument('--c_out', type=int, default=12, help='output size')
     parser.add_argument('--d_model', type=int, default=512, help='dimension of model')
     parser.add_argument('--n_heads', type=int, default=8, help='num of heads')
     parser.add_argument('--e_layers', type=int, default=2, help='num of encoder layers')
@@ -84,9 +84,9 @@ if __name__ == '__main__':
     parser.add_argument('--do_predict', default=True, help='whether to predict unseen future data')
 
     # optimization
-    parser.add_argument('--num_workers', type=int, default=4, help='data loader num workers')
+    parser.add_argument('--num_workers', type=int, default=1, help='data loader num workers')
     parser.add_argument('--itr', type=int, default=1, help='experiments times')
-    parser.add_argument('--train_epochs', type=int, default=100, help='train epochs')
+    parser.add_argument('--train_epochs', type=int, default=2, help='train epochs')
     parser.add_argument('--batch_size', type=int, default=512, help='batch size of train input data')
     parser.add_argument('--patience', type=int, default=100, help='early stopping patience')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='optimizer learning rate')
