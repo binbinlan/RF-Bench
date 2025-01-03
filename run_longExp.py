@@ -20,12 +20,11 @@ class Logger(object):
         pass
 
 if __name__ == '__main__':
-    logger = Logger(r"D:\new_models\Patch_Transformer\PatchTST-main\PatchTST_supervised\results\log.txt")
-    sys.stdout = logger
-    parser = argparse.ArgumentParser(description='Autoformer & Transformer family for Time Series Forecasting')
+
+    parser = argparse.ArgumentParser(description='Transformer family for Runoff and flood Forecasting')
 
     # random seed
-    parser.add_argument('--random_seed', type=int, default=2021, help='random seed')
+    parser.add_argument('--random_seed', type=int, default=2024, help='random seed')
 
     # basic config
     parser.add_argument('--is_training', type=int,default=1, help='status')
@@ -33,7 +32,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str,  default='LSTM',
                         help='model name, options: [Autoformer, Informer, Transformer, PatchTST, DLinear, LSTM, Mamba]')
     parser.add_argument('--all_model', type=bool,  default=False,
-                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM]')
+                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM, Mamba]')
 
     # data loader
     parser.add_argument('--data', type=str,  default='Runoff', help='dataset type')
@@ -96,7 +95,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_workers', type=int, default=1, help='data loader num workers')
     parser.add_argument('--itr', type=int, default=1, help='experiments times')
 
-    parser.add_argument('--train_epochs', type=int, default=100, help='train epochs')
+    parser.add_argument('--train_epochs', type=int, default=2, help='train epochs')
     parser.add_argument('--batch_size', type=int, default=512, help='batch size of train input data')
     parser.add_argument('--patience', type=int, default=100, help='early stopping patience')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='optimizer learning rate')
