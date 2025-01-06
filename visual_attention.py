@@ -16,7 +16,7 @@ import seaborn as sns
 import torch.nn.functional as F
 
 """
-for Informer
+for Inverse_Informer
 """
 
 if __name__ == '__main__':

@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # basic config
     parser.add_argument('--is_training', type=int,default=1, help='status')
     parser.add_argument('--model_id', type=str, default='without_attribute_24', help='model id')
-    parser.add_argument('--model', type=str,  default='LSTM',
+    parser.add_argument('--model', type=str,  default='PatchTST',
                         help='model name, options: [Autoformer, Informer, Transformer, PatchTST, DLinear, LSTM, Mamba]')
     parser.add_argument('--all_model', type=bool,  default=False,
                         help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM, Mamba]')
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_workers', type=int, default=1, help='data loader num workers')
     parser.add_argument('--itr', type=int, default=1, help='experiments times')
 
-    parser.add_argument('--train_epochs', type=int, default=2, help='train epochs')
+    parser.add_argument('--train_epochs', type=int, default=100, help='train epochs')
     parser.add_argument('--batch_size', type=int, default=512, help='batch size of train input data')
     parser.add_argument('--patience', type=int, default=100, help='early stopping patience')
     parser.add_argument('--learning_rate', type=float, default=0.0001, help='optimizer learning rate')
