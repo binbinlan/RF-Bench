@@ -3,9 +3,9 @@
 A deep learning based benchmark for hourly runoff and flood forecasting
 ***
 
-**
-Author : Binbinlan
-**
+
+__Author : Binbinlan__
+
 
 <div align=center><img src="https://github.com/binbinlan/RF-Bench/blob/main/pics/fig2.png/"></div>
 
