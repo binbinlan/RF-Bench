@@ -4,11 +4,9 @@
 ![cuda 7.3.1](https://img.shields.io/badge/cuda-12.2-green.svg?style=plastic)
 ![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA--green.svg?style=plastic)
 ***
-Author : Binbinlan 
+Author : Binbinlan , Ouyang Chaojun , Qingsong Xu , Yanlin Liu
 ***
 
-
-__Author : Binbinlan__
 
 :triangular_flag_on_post:**Demonstration**: <u>👉👉👉[[(https://colab.research.google.com/)](https://colab.research.google.com/drive/1P6yEHX_g9xtMg_hwYSBtTCuXGOFxtbMt?usp=sharing)]👈👈👈<u>
 
