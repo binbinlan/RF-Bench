@@ -1,7 +1,7 @@
 # ![Image text](https://github.com/binbinlan/RF-Bench/blob/main/pics/fig4.png) RF-Bench: A deep learning based benchmark for hourly runoff and flood forecasting
 ![Python 3.9](https://img.shields.io/badge/python-3.9-green.svg?style=plastic)
 ![PyTorch 1.2](https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?style=plastic)
-![cuDNN 7.3.1](https://img.shields.io/badge/cudnn-7.3.1-green.svg?style=plastic)
+![cuda 7.3.1](https://img.shields.io/badge/cuda-12.2-green.svg?style=plastic)
 ![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA--green.svg?style=plastic)
 ***
 Author : Binbinlan 
