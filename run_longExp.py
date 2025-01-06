@@ -228,5 +228,5 @@ if __name__ == '__main__':
                 exp.predict(setting, True)
 
             torch.cuda.empty_cache()
-    logger.log.close()
-    shutil.move('./results/log.txt','./results'+'/'+ setting +'/'+'log.txt')
+    #logger.log.close()
+    #shutil.move('./results/log.txt','./results'+'/'+ setting +'/'+'log.txt')
