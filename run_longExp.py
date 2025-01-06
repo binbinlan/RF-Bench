@@ -33,7 +33,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', type=str,  default='LSTM',
                         help='model name, options: [Autoformer, Informer, Transformer, PatchTST, DLinear, LSTM, Mamba]')
     parser.add_argument('--all_model', type=bool,  default=False,
-                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM]')
+                        help='run all models in a exp, options: [Autoformer, Informer, Transformer, PatchTST, DLinear,LSTM£¬Mamba]')
 
     # data loader
     parser.add_argument('--data', type=str,  default='Runoff', help='dataset type')
