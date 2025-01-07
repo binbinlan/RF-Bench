@@ -4,7 +4,7 @@
 ![cuda 7.3.1](https://img.shields.io/badge/cuda-12.2-green.svg?style=plastic)
 ![License CC BY-NC-SA](https://img.shields.io/badge/license-CC_BY--NC--SA--green.svg?style=plastic)
 ***
-Author : Binbin Zhang , Ouyang Chaojun , Qingsong Xu , Yanlin Liu
+Author : Binlan Zhang , Ouyang Chaojun , Qingsong Xu , Yanlin Liu
 ***
 
 
